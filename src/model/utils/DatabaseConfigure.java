@@ -1,4 +1,4 @@
 package model.utils;
 
-public class DatabaseConfigure {
+public class DatabaseConfigure   {
 }
