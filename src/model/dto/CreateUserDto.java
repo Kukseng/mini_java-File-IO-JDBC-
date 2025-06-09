@@ -3,9 +3,9 @@ package model.dto;
 import lombok.Builder;
 
 @Builder
-public record UserRespondDto(
-        String uuid,
+public record CreateUserDto(
         String username,
-        String email
+        String email,
+        String password
 ) {
 }
