@@ -20,5 +20,8 @@
     <orderEntry type="library" exported="" name="text-table-formatter-1.1.2" level="project" />
     <orderEntry type="library" name="jbcrypt-0.5" level="project" />
     <orderEntry type="library" name="postgresql-42.7.5" level="project" />
+    <orderEntry type="library" name="core-3.5.1" level="project" />
+    <orderEntry type="library" name="javase-3.5.1" level="project" />
+    <orderEntry type="library" name="jline-3.21.0" level="project" />
   </component>
 </module>
