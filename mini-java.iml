@@ -19,5 +19,7 @@
     <orderEntry type="library" name="jbcrypt-0.4" level="project" />
     <orderEntry type="library" name="postgresql-42.7.6" level="project" />
     <orderEntry type="library" name="text-table-formatter-1.1.2" level="project" />
+    <orderEntry type="library" name="lombok" level="project" />
+    <orderEntry type="library" name="jbcrypt-0.5" level="project" />
   </component>
 </module>
