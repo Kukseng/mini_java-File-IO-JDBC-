@@ -6,19 +6,15 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
-
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
 @Builder
-public class Product {
+@AllArgsConstructor
+@Data
+@NoArgsConstructor
+public class OrderItem {
     private int id;
-    private String name;
-    private String category;
+    private int orderId;
+    private int productId;
+    private int qty;
     private BigDecimal price;
-    private int quantity;
-    private String uuid;
-    private boolean isDeleted;
-    private LocalDateTime createdAt;
+    private Product product;
 }
