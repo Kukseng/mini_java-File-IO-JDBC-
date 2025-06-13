@@ -7,17 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="module-library" scope="PROVIDED">
-      <library>
-        <CLASSES>
-          <root url="jar://$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.34/lombok-1.18.34.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES />
-      </library>
-    </orderEntry>
+    <orderEntry type="library" name="lombok" level="project" />
     <orderEntry type="library" name="jbcrypt-0.4" level="project" />
     <orderEntry type="library" name="postgresql-42.7.6" level="project" />
-    <orderEntry type="library" name="text-table-formatter-1.1.2" level="project" />
   </component>
 </module>

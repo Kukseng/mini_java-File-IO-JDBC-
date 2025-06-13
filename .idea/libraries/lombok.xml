@@ -1,7 +1,7 @@
 <component name="libraryTable">
-  <library name="jbcrypt-0.4">
+  <library name="lombok">
     <CLASSES>
-      <root url="jar://$USER_HOME$/Downloads/jbcrypt-0.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/lombok.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

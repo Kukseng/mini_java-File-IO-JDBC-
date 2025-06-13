@@ -5,6 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
@@ -12,22 +13,25 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Product {
     private Integer id;
+    private String name;
+    private String category;
+    private BigDecimal price;
+    private Integer quantity;
     private String uuid;
-    private String username;
-    private String email;
-    private String password;
     private Boolean isDeleted;
     private LocalDateTime createdAt;
 
-    public User(String username, String email, String password) {
+
+    public Product(String name, String category, BigDecimal price, Integer quantity) {
         this.uuid = UUID.randomUUID().toString();
         this.isDeleted = false;
         this.createdAt = LocalDateTime.now();
-        this.username = username;
-        this.email = email;
-        this.password = password;
+        this.name = name;
+        this.category = category;
+        this.price = price;
+        this.quantity = quantity;
     }
 }
 
