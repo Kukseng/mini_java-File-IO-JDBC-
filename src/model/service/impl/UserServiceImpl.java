@@ -17,24 +17,4 @@ public class UserServiceImpl implements UserService {
         User user = UserMapper.fromCreateUserDtoToUser(createUserDto);
         return UserMapper.fromUserToUserResponseDto(USER_REPOSITORY_IMPL.save(user));
     }
-
-    @Override
-    public List<UserRespondDto> getAllUsers() {
-        return List.of();
-    }
-
-    @Override
-    public UserRespondDto findUserByUuid(String uuid) {
-        return null;
-    }
-
-    @Override
-    public Integer deleteUserByUuid(String uuid) {
-        return 0;
-    }
-
-    @Override
-    public UserRespondDto updateUserByUuid(String uuid, CreateUserDto updateDto) {
-        return null;
-    }
 }

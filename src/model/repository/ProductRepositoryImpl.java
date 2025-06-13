@@ -113,10 +113,10 @@ public class ProductRepositoryImpl implements ProductRepository {
     private Product mapResultSetToProduct(ResultSet rs) throws SQLException {
 
         Product product = new Product();
-        product.setUuid(rs.getString("p_uuid"));
-        product.setName(rs.getString("p_name"));
+        product.setP_uuid(rs.getString("p_uuid"));
+        product.setP_name(rs.getString("p_name"));
         product.setCategory(rs.getString("category"));
-        product.setPrice(rs.getBigDecimal("price"));
+        product.setP_price(rs.getBigDecimal("price"));
 
         return product;
     }

@@ -4,12 +4,12 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DatabaseConfigure {
-    private static final String dbUrl = "jdbc:postgresql://34.50.101.249:5432/java";
-    private static final String dbPassword = "matra1002";
-    private static final String dbUsername = "postgres";
+    private static String url = "jdbc:postgresql://localhost:5432/postgres";
+    private static String user = "postgres";
+    private static String password = "supermatra";
     public static Connection getDatabaseConnection(){
         try {
-            return DriverManager.getConnection(dbUrl, dbUsername, dbPassword);
+            return DriverManager.getConnection(url, user, password);
         }catch (Exception exception){
             System.err.println("[!] ERROR during get connection with database: " + exception.getMessage());
         }

@@ -20,7 +20,7 @@ public class OrderRepositoryImpl implements OrderRepository {
         BigDecimal totalPrice = BigDecimal.ZERO;
 
         for (CartItem item : cartItems) {
-            totalPrice = totalPrice.add(item.getProduct().getPrice().multiply(BigDecimal.valueOf(item.getQuantity())));
+            totalPrice = totalPrice.add(item.getProduct().getP_price().multiply(BigDecimal.valueOf(item.getQuantity())));
         }
 
         String orderSql = "INSERT INTO orders (user_id, order_code, total_price) VALUES (?, ?, ?) RETURNING id";
@@ -49,7 +49,7 @@ public class OrderRepositoryImpl implements OrderRepository {
                         itemStmt.setInt(1, orderId);
                         itemStmt.setInt(2, item.getProductId());
                         itemStmt.setInt(3, item.getQuantity());
-                        itemStmt.setBigDecimal(4, item.getProduct().getPrice());
+                        itemStmt.setBigDecimal(4, item.getProduct().getP_price());
                         itemStmt.addBatch();
                     }
                     itemStmt.executeBatch();

@@ -14,11 +14,11 @@ import java.time.LocalDateTime;
 @Builder
 public class Product {
     private int id;
-    private String name;
+    private String p_name;
     private String category;
-    private BigDecimal price;
-    private int quantity;
-    private String uuid;
+    private BigDecimal p_price;
+    private int p_quantity;
+    private String p_uuid;
     private boolean isDeleted;
     private LocalDateTime createdAt;
 }

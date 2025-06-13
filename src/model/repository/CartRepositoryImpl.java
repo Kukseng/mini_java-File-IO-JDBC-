@@ -72,11 +72,11 @@ public class CartRepositoryImpl implements CartRepository {
 
                 Product product = new Product();
                 product.setId(rs.getInt("p.id"));
-                product.setName(rs.getString("p.p_name"));
+                product.setP_name(rs.getString("p.p_name"));
                 product.setCategory(rs.getString("p.category"));
-                product.setPrice(rs.getBigDecimal("p.price"));
-                product.setQuantity(rs.getInt("p.qty"));
-                product.setUuid(rs.getString("p.p_uuid"));
+                product.setP_price(rs.getBigDecimal("p.price"));
+                product.setP_quantity(rs.getInt("p.qty"));
+                product.setP_uuid(rs.getString("p.p_uuid"));
 
                 cartItem.setProduct(product);
                 cartItems.add(cartItem);
