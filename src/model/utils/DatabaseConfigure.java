@@ -4,8 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 
 public class DatabaseConfigure {
-    private static final String dbUrl = "jdbc:postgresql://localhost:4000/javaa";
-    private static final String dbPassword = "seng4321";
+    private static final String dbUrl = "jdbc:postgresql://localhost:5432/postgres";
+    private static final String dbPassword = "supermatra";
     private static final String dbUsername = "postgres";
     public static Connection getDatabaseConnection(){
         try {
